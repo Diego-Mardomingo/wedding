@@ -1,19 +1,21 @@
 $(document).ready(function () {
-  insertarPersona();
+  
   viewAll();
 });
 
-function insertarPersona(){
+function insertarPersona(nombre,apellidos,edad,menu,asistencia,dormir,comentarios,alergias){
   $.ajax({
     type: "post",
     url: "./php/INSERT_persona.php",
     data: {
-      nombre: "Diego",
-      apellidos: "López Mardomingo",
-      edad: "Adulto",
-      menu: "Normal",
-      asistencia: "Si",
-      dormir: "Si"
+      nombre: nombre,
+      apellidos: apellidos,
+      edad: edad,
+      menu: menu,
+      asistencia: asistencia,
+      dormir: dormir,
+      comentarios: comentarios,
+      alergias: alergias
     },
     dataType: "json",
     success: function (response) {
