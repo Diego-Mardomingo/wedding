@@ -1,53 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
-  <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <link rel="stylesheet" href="index.css">
-  <title>¡Nos casamos! | Cris y Borja</title>
-</head>
-<body>
-  <div class="encabezado">
-    <h1>¡Nos casamos!</h1>
-  </div>
-  <div class="formulario">
-    <div class="asistencia">
-      <label for="asistencia">¿Asistirás a nuestra celebración?</label><br>
-      <input type="radio" name="asistencia" id="asistencia_si">Si!<br>
-      <input type="radio" name="asistencia" id="asistencia_no">No 😔
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>¡Nos casamos! | Cris y Borja</title>
+  </head>
+  <body>
+    <div class="encabezado">
+      <div>
+        <h1>¡Nos casamos!</h1>
+        <p>A partir de las 18:00 | 27 de Abril de 2024</p>
+        <p>¡Os esperamos a todos!</p>
+      </div>
+      <!-- <img src="img/fondo.jpg" alt="Puente Harry Potter"> -->
     </div>
-    <div class="adultos">
-      <label>¿Cuántos adultos asistirán?</label>
-      <input type="number" min="0" max="10">
+    <div class="formulario">
+      <div class="maps">
+        <div>
+          El lugar donde se realizará la boda es en el Palacio del Esquileo,
+          Soto de Sepúlveda, Segovia.
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8482.094516605084!2d-3.569123258488132!3d41.26809503064707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd440889a8141255%3A0x9c358e5bb4105bac!2sPalacio%20de%20Esquileo!5e0!3m2!1ses!2ses!4v1691516794247!5m2!1ses!2ses"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="negrita prisa">
+        Nos encantaría contar con vuestra presencia en este día tan especial. Os
+        pedimos que nos confirméis asistencia antes del 1 de marzo para poder
+        organizarlo todo.
+      </div>
+      <div class="asistencia">
+        <div class="negrita">¿Asistirás a nuestra celebración?</div>
+        <div>
+          <input type="radio" checked name="asistencia" id="asistencia_si" />
+          Si, asistiré al evento del año
+        </div>
+        <div>
+          <input type="radio" name="asistencia" id="asistencia_no" />
+          Lamentablemente no podré asistir al evento del año
+        </div>
+      </div>
+      <div class="adultos negrita">
+        <div>
+          <div class="negrita">¿Cuántos adultos asistirán?</div>
+          <input id="numAdultos" type="number" min="0" max="10" />
+        </div>
+      </div>
+      <div class="ninos negrita">
+        <div>
+          <div class="negrita">¿Cuántos niños asistirán?</div>
+          <input id="numNinos" type="number" min="0" max="10" />
+        </div>
+      </div>
+      <div class="menu">
+        <div class="negrita">
+          Escoge un menú:
+          <select name="menu" id="menu">
+            <option value="Normal">Normal</option>
+            <option value="Vegano">Vegano</option>
+          </select>
+        </div>
+        <div>
+          <div class="negrita">
+            ¿Tienes alguna alergia o intolerancia? Háznoslo saber:
+          </div>
+          <textarea name="alergias" id="alergias" cols="50" rows="7"></textarea>
+        </div>
+      </div>
+      <div class="dormir">
+        La finca cuenta con algunas habitaciones por si preferís quedaros a
+        dormir despues de la fiesta. Los precios de las habitaciones son, 116€
+        la individual, 137€ la doble y 180€ la familiar, con iva y desayuno
+        incluidos. Si no hay para todos no os preocupéis que pondremos a vuestra
+        disposición otras opciones cerquita.
+        <div>
+          <div class="negrita">¿Desearías quedarte a dormir?</div>
+          <div>
+            <input type="radio" name="dormir" id="dormir_si" /> Si
+            <input type="radio" checked name="dormir" id="dormir_no" /> No
+          </div>
+        </div>
+      </div>
+      <div class="dinero">
+        <p>
+          Por si os lo estabais preguntando, no necesitamos regalos, ya tenemos
+          batidora. Pero podéis ayudarnos en el siguiente número de cuenta:
+        </p>
+      </div>
+      <div class="contacto">
+        <p>
+          Si quieres hacernos un comentario sobre algo que debamos tener en
+          cuenta, o tienes dudas sobre algún aspecto concreto puedes contactar
+          con nosotros:
+        </p>
+        Email: correofalso@123.es Teléfono: 123 789 456
+      </div>
+      <div class="enviar">Enviar!</div>
     </div>
-    <div class="ninos">
-      <label>¿Cuántos niños asistirán?</label>
-      <input type="number" min="0" max="10">
-    </div>
-    <div class="menu">
-      <label>Escoge un menú:</label>
-      <select name="menu" id="menu">
-        <option value="Normal">Normal</option>
-        <option value="Vegano">Vegano</option>
-      </select>
-      <label>¿Tienes alguna alergia o intolerancia?</label>
-      <textarea name="alergias" id="alergias" cols="30" rows="10" style="resize: none;"></textarea>
-    </div>
-    <div class="dormir">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, inventore vitae odit similique asperiores temporibus id quae atque! Magnam blanditiis ex non eum accusantium error temporibus ab similique repellat.
-      <label>¿Desearías quedarte a dormir?</label>
-      <input type="radio" name="asistencia" id="asistencia_si">Si<br>
-      <input type="radio" name="asistencia" id="asistencia_no">No
-    </div>
-    <div class="contacto">
-      <p>Si quieres hacernos un comentario sobre algo que debamos tener en cuenta, o tienes dudas sobre algún aspecto concreto puedes contactar con nosotros:</p>
-      Email: correofalso@123.es
-      Teléfono: 123 789 456
-    </div>
-    <div class="enviar">Enviar!</div>
-  </div>
-</body>
+  </body>
 </html>

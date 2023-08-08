@@ -1,5 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 *{
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+body{
+  /* background: linear-gradient(#bde0fe,#ffc8dd); */
+  /* background-image: url("img/menteUpScale.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; */
+  min-height: 95vh;
+  background-color: #eee;
+}
+
+.encabezado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.4em;
+  position: relative;
+  min-height: 80vh;
+  background: linear-gradient(rgba(5, 7, 12, .75),rgba(5, 7, 12, .75)), url("img/fondo.jpg");
+  /* background-image: url("img/fondo.jpg");
+  background-color: linear-gradient(rgba(0, 0, 0, .55),rgba(0, 0, 0, .55)); */
+  background-position: center;
+  background-size: cover;
+  margin: 0 0 2em 0;
+}
+
+.encabezado > div > h1{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 5em;
+}
+.encabezado > div > p{
+  font-family: 'Cormorant Garamond', serif;
+  margin: auto;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.encabezado > div{
+  color: #fff;
+  /* background-color: rgba(0, 0, 0, .75); */
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.maps{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-weight: 600;
+}
+.maps > iframe{
+  width: 90%;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  box-shadow: 0px 7px 10px 1px rgba(0,0,0,0.35);
+  padding: 3em;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 3em;
+}
+.formulario > *{
+  width: 50%;
+}
+
+.asistencia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: .7em;
+}
+
+.negrita{
+  font-weight: 600 !important;
+}
+
+.prisa{
+  width: 50%;
+}
+
+.adultos,
+.ninos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+}
+.adultos > div:nth-child(1),
+.ninos > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .5em;
+}
+.inputsadultos,
+.inputsninos{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+.inputsadultos > div,
+.inputsninos > div{
+  display: flex;
+  flex-direction: row;
+  gap: .5em;
+}
+.inputsadultos > div > input,
+.inputsninos > div > input{
+  padding: .5em;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.dormir{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+.dormir > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+textarea{
+  margin-top: .5em;
+  width: 100%;
+  resize: none;
+  padding: 1em;
+}
+select{
+  padding: .3em;
+  font-size: 1em;
+}
+.enviar{
+  display: grid;
+  place-content: center;
 }

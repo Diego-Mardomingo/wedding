@@ -1,9 +1,37 @@
 $(document).ready(function () {
-  
+
+  document.querySelector('#numAdultos').addEventListener('input', () => {
+    console.log($('#numAdultos').val());
+    crearInputs('adultos',$('#numAdultos').val());
+  });
+  document.querySelector('#numNinos').addEventListener('input', () => {
+    console.log($('#numNinos').val());
+    crearInputs('ninos',$('#numNinos').val());
+  });
   viewAll();
 });
 
-function insertarPersona(nombre,apellidos,edad,menu,asistencia,dormir,comentarios,alergias){
+function crearInputs(tipo,numInputs){
+  $('.inputs'+tipo).remove();
+  let inputs = document.createElement('div');
+  $(inputs).addClass('inputs'+tipo);
+  for (let i = 0; i < numInputs; i++) {
+    let input = document.createElement('div');
+    $(input).addClass('input'+i);
+    let nombre = document.createElement('input');
+    $(nombre).addClass('nombre'+i);
+    $(nombre).attr('placeholder', 'Nombre');
+    $(input).append(nombre);
+    let apellidos = document.createElement('input');
+    $(apellidos).addClass('apellidos'+i);
+    $(apellidos).attr('placeholder', 'Apellidos');
+    $(input).append(apellidos);
+    $(inputs).append(input);
+  }
+  $('.'+tipo).append(inputs);
+}
+
+function insertarPersona(nombre,apellidos,edad,menu,asistencia,dormir,alergias){
   $.ajax({
     type: "post",
     url: "./php/INSERT_persona.php",
@@ -14,7 +42,6 @@ function insertarPersona(nombre,apellidos,edad,menu,asistencia,dormir,comentario
       menu: menu,
       asistencia: asistencia,
       dormir: dormir,
-      comentarios: comentarios,
       alergias: alergias
     },
     dataType: "json",
