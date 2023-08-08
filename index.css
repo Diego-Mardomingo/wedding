@@ -82,7 +82,7 @@ body{
   margin-bottom: 3em;
 }
 .formulario > *{
-  width: 50%;
+  width: 90%;
 }
 
 .asistencia{
@@ -127,7 +127,11 @@ body{
 .inputsninos > div{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: .5em;
+  padding: .5em;
+  background-color: #eee;
+  border-radius: 10px;
 }
 .inputsadultos > div > input,
 .inputsninos > div > input{
