@@ -8,7 +8,7 @@ define("DB_PASS","estoessuperestupidolaverdad");
 // define("DB_HOST","localhost");
 // define("DB_NAME","bd_boda");
 // define("DB_USER","root");
-// define("DB_PASS","estoessuperestupidolaverdad");
+// define("DB_PASS","");
 
   class DataBase{
     private $host;
