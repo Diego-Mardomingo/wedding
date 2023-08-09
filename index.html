@@ -11,6 +11,7 @@
   </head>
   <body>
     <div class="encabezado">
+      <div class="floatext">Boda Cristina & Borja</div>
       <div>
         <h1>¡Nos casamos!</h1>
         <p>A partir de las 18:00 | 27 de Abril de 2024</p>
@@ -63,16 +64,17 @@
         </div>
       </div>
       <div class="menu">
-        <div class="negrita">
+        <!-- <div class="negrita">
           Escoge un menú:
           <select name="menu" id="menu">
             <option value="Normal">Normal</option>
             <option value="Vegano">Vegano</option>
           </select>
-        </div>
-        <div>
+        </div> -->
+        <div class="alergiasclase">
           <div class="negrita">
-            ¿Tienes alguna alergia o intolerancia? Háznoslo saber:
+            ¿Tienes alguna alergia o intolerancia? Háznoslo saber <br>
+            <span style="font-size: .8em;">(Por favor, añade el nombre de la persona afectada)</span> 
           </div>
           <textarea name="alergias" id="alergias" cols="50" rows="7"></textarea>
         </div>
@@ -85,9 +87,9 @@
         disposición otras opciones cerquita.
         <div>
           <div class="negrita">¿Desearías quedarte a dormir?</div>
-          <div>
-            <input type="radio" name="dormir" id="dormir_si" /> Si
-            <input type="radio" checked name="dormir" id="dormir_no" /> No
+          <div class="opciones_dormir">
+            <div><input type="radio" name="dormir" id="dormir_si" /> Si</div>
+            <div><input type="radio" checked name="dormir" id="dormir_no" /> No</div>
           </div>
         </div>
       </div>
@@ -103,7 +105,11 @@
           cuenta, o tienes dudas sobre algún aspecto concreto puedes contactar
           con nosotros:
         </p>
-        Email: correofalso@123.es Teléfono: 123 789 456
+        <div class="datos_contacto">
+          <div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>  -->
+            BodaCrisyBorja@outlook.es</div>
+        </div>
       </div>
       <div class="enviar">Enviar!</div>
     </div>

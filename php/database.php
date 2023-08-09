@@ -1,9 +1,14 @@
 <?php
 
-define("DB_HOST","localhost");
-define("DB_NAME","bd_boda");
-define("DB_USER","root");
-define("DB_PASS","");
+define("DB_HOST","db5014058577.hosting-data.io");
+define("DB_NAME","dbs11735243");
+define("DB_USER","dbu2074352");
+define("DB_PASS","estoessuperestupidolaverdad");
+
+// define("DB_HOST","localhost");
+// define("DB_NAME","bd_boda");
+// define("DB_USER","root");
+// define("DB_PASS","estoessuperestupidolaverdad");
 
   class DataBase{
     private $host;

@@ -16,6 +16,7 @@ body{
   background-size: cover; */
   min-height: 95vh;
   background-color: #eee;
+  text-align: center;
 }
 
 .encabezado{
@@ -35,7 +36,12 @@ body{
   background-size: cover;
   margin: 0 0 2em 0;
 }
-
+.floatext{
+  position: absolute;
+  top: 0;
+  font-size: .9em;
+  font-family: 'Cormorant Garamond', serif;
+}
 .encabezado > div > h1{
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
@@ -97,10 +103,6 @@ body{
   font-weight: 600 !important;
 }
 
-.prisa{
-  width: 50%;
-}
-
 .adultos,
 .ninos{
   display: flex;
@@ -130,8 +132,7 @@ body{
   flex-wrap: wrap;
   gap: .5em;
   padding: .5em;
-  background-color: #eee;
-  border-radius: 10px;
+  border: 1px solid #AAA;
 }
 .inputsadultos > div > input,
 .inputsninos > div > input{
@@ -160,6 +161,24 @@ body{
   align-items: flex-start;
   gap: 1em;
 }
+.opciones_dormir{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.datos_contacto > div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  font-weight: 700;
+}
 
 textarea{
   margin-top: .5em;
@@ -174,4 +193,16 @@ select{
 .enviar{
   display: grid;
   place-content: center;
+  background-color: #38c;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0px 7px 10px 1px rgba(0,0,0,0.35);
+  font-weight: 800;
+  font-size: 1.2em;
+  color: #000;
+}
+.enviar:hover{
+  cursor: pointer;
+  background-color: rgb(94, 165, 223);
 }
