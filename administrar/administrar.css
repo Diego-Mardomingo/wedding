@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+#content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+  margin: 0 1em;
+}
+h1{
+  width: 100% !important;
+}
+table{
+  width: 100% !important;
+}
+.tarjeta{
+  padding: 2em;
+  box-shadow: 0px 7px 10px 1px rgba(0,0,0,0.35);
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border-radius: 15px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.tarjeta > div:nth-child(2){
+  font-size: 3em;
+  font-weight: 900;
+}
+.divTotal > div:nth-child(2){
+  color: #38c;
+}
+.divAsistencia > div:nth-child(2){
+  color: green;
+}
+.divNoAsistencia > div:nth-child(2){
+  color: red;
+}
+.divAdultos > div:nth-child(2){
+  color: rgb(2, 73, 131);
+}
+.divNinos > div:nth-child(2){
+  color: rgb(167, 167, 37);
+}
+.divCarne > div:nth-child(2){
+  color: orange;
+}
+.divVegano > div:nth-child(2){
+  color: greenyellow;
+}
+.divDormir > div:nth-child(2){
+  color: rgb(96, 42, 223);
+}
+.divNoDormir > div:nth-child(2){
+  color: rgb(167, 103, 228);
+}
