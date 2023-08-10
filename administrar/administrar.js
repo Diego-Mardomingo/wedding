@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     if (enteredPassword === correctPassword) {
       modal.style.display = "none";
-      content.style.display = "block";
+      content.style.display = "flex";
     } else {
       alert("Contraseña incorrecta. Inténtalo nuevamente.");
     }
