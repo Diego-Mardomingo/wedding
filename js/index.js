@@ -14,6 +14,17 @@ $(document).ready(function () {
     validar();
   });
 
+  document.querySelector('.toFormacion').addEventListener('click', () => {
+    const navHeight = document.querySelector(".encabezado").offsetHeight;
+    // const imagenHeight = document.querySelector(".imagen").offsetHeight;
+    // let position = imagenHeight - navHeight;
+    window.scrollTo({
+      top: navHeight,
+      behavior: 'smooth'
+    });
+  });
+  
+
 });
 
 function crearInputs(tipo,numInputs){

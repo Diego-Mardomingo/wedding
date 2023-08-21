@@ -16,7 +16,13 @@ body{
   background-size: cover; */
   min-height: 95vh;
   background-color: #38c;
-  text-align: center;
+  text-align: center; 
+}
+.background{
+  padding: 6em 2em 3em 2em;
+  background: linear-gradient(rgba(5, 7, 12, .25),rgba(5, 7, 12, .55)), url("img/fondo_flores (1).jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .encabezado{
@@ -28,13 +34,12 @@ body{
   font-weight: 700;
   font-size: 1.4em;
   position: relative;
-  min-height: 80vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(5, 7, 12, .75),rgba(5, 7, 12, .75)), url("img/fondo.jpg");
   /* background-image: url("img/fondo.jpg");
   background-color: linear-gradient(rgba(0, 0, 0, .55),rgba(0, 0, 0, .55)); */
   background-position: center;
   background-size: cover;
-  margin: 0 0 2em 0;
 }
 .floatext{
   position: absolute;
@@ -84,14 +89,20 @@ body{
   border-radius: 10px;
   max-width: 80%;
   margin: auto;
-  background-color: #fff;
-  margin-bottom: 3em;
+  background-color: #eee;
 }
 .formulario > *{
   width: 90%;
 }
 
 .asistencia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .7em;
+}
+.opcion_asistencia{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,12 +114,27 @@ body{
   font-weight: 600 !important;
 }
 
+.toFormacion{
+  position: absolute;
+  bottom: 0;
+  z-index: 200;
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #fff;
+  background-color: rgba(0,0,0,0.55);
+  padding: .5em;
+  border-radius: 25px;
+}
+.toFormacion:hover{
+  cursor: pointer;
+}
+
 .adultos,
 .ninos{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1em;
 }
 .adultos > div:nth-child(1),
@@ -143,7 +169,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1em;
 }
 
@@ -151,14 +177,14 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 2em;
 }
 .dormir > div{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1em;
 }
 .opciones_dormir{
@@ -193,7 +219,7 @@ select{
 .enviar{
   display: grid;
   place-content: center;
-  background-color: #38c;
+  background-color: #1e6e7a;
   width: fit-content;
   padding: 1em;
   border-radius: 5px;
@@ -204,5 +230,5 @@ select{
 }
 .enviar:hover{
   cursor: pointer;
-  background-color: rgb(94, 165, 223);
+  background-color: #2790a0;
 }
